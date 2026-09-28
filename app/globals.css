@@ -49,6 +49,16 @@ textarea {
   font: inherit;
 }
 
+@layer base {
+  button,
+  [role="button"],
+  input[type="button"],
+  input[type="submit"],
+  input[type="reset"] {
+    cursor: pointer;
+  }
+}
+
 .action-control {
   min-height: 3rem;
   gap: 0.5rem;

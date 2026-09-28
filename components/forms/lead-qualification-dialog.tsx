@@ -203,7 +203,7 @@ export function LeadQualificationDialog({ open, request, bookingUrl, onClose }: 
 
   return (
     <div className="fixed inset-0 z-[70] flex items-end justify-center sm:items-center sm:p-6">
-      <button type="button" aria-label="Close inquiry form" onClick={onClose} onKeyDown={stopBackdrop} className="absolute inset-0 cursor-default bg-[#1c2821]/55 backdrop-blur-[2px]" />
+      <button type="button" aria-label="Close inquiry form" onClick={onClose} onKeyDown={stopBackdrop} className="absolute inset-0 bg-[#1c2821]/55 backdrop-blur-[2px]" />
       <div ref={dialogRef} role="dialog" aria-modal="true" aria-labelledby="lead-dialog-title" className="relative flex max-h-[94dvh] w-full max-w-[720px] flex-col overflow-hidden rounded-t-2xl border border-aster-border bg-aster-white shadow-[0_24px_80px_rgba(18,29,22,0.24)] sm:max-h-[min(880px,92dvh)] sm:rounded-2xl">
         <div className="flex items-start justify-between gap-5 border-b border-aster-border px-5 py-4 sm:px-7 sm:py-5">
           <div>

@@ -216,7 +216,7 @@ export function ChatAssistant({ open, bookingUrl, onOpen, onClose }: { open: boo
       )}
       {open && (
         <div className="fixed inset-0 z-[80] flex items-end justify-center bg-[#1c2821]/45 sm:items-end sm:justify-end sm:bg-transparent sm:p-7">
-          <button type="button" aria-label="Close assistant" onClick={onClose} className="absolute inset-0 cursor-default sm:bg-transparent" />
+          <button type="button" aria-label="Close assistant" onClick={onClose} className="absolute inset-0 sm:bg-transparent" />
           <section id="aster-chat-panel" role="dialog" aria-modal="true" aria-labelledby="aster-chat-title" className="chat-drawer relative z-10 flex w-full flex-col overflow-hidden border border-aster-border bg-aster-white shadow-[0_20px_70px_rgba(18,29,22,0.22)] sm:w-[420px] sm:rounded-2xl">
             <header className="flex shrink-0 items-center justify-between gap-3 border-b border-aster-border px-4 py-3.5 sm:px-5">
               <div className="flex items-center gap-3"><div className="flex h-10 w-10 items-center justify-center rounded-xl bg-aster-sage"><Image src="/brand/aster-logo-mark.png" alt="" width={32} height={32} /></div><div><h2 id="aster-chat-title" className="text-sm font-semibold text-aster-ink">Aster Assistant</h2><p className="mt-0.5 flex items-center gap-1.5 text-[10px] text-aster-muted"><Sparkles size={12} aria-hidden="true" />{assistantMode === "configured" ? "AI home-search assistant" : "Home-search guide"} <span className="rounded bg-[#F0EAE0] px-1.5 py-0.5 text-[9px] font-semibold uppercase tracking-wide text-[#75513D]">{assistantMode === "configured" ? "AI connected" : assistantMode === "unavailable" ? "Unavailable" : "Guided"}</span></p></div></div>
