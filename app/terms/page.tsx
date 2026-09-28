@@ -3,7 +3,7 @@ import Link from "next/link";
 import { BrandMark } from "@/components/landing/brand-mark";
 import { canonicalSiteUrl } from "@/lib/config";
 
-const siteUrl = canonicalSiteUrl();
+const siteUrl = canonicalSiteUrl().replace(/\/+$/, "");
 const description = "Terms for the Aster Homes home-search inquiry site.";
 
 export const metadata: Metadata = {
