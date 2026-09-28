@@ -19,10 +19,14 @@ export function FAQSection() {
           <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-aster-muted">A few helpful answers</p>
           <h2 className="font-display mt-3 text-4xl leading-tight tracking-[-0.025em] text-aster-ink sm:text-5xl">Questions, answered.</h2>
           <p className="mt-4 text-sm leading-6 text-aster-muted">Still curious? The Aster Assistant can help you find a starting point.</p>
-          <ChatActionButton className="mt-5 inline-flex min-h-10 items-center text-sm font-semibold text-aster-forest hover:text-aster-forest-deep">Talk with Aster Assistant <ArrowUpRight size={16} aria-hidden="true" /></ChatActionButton>
-          <LeadActionButton source="booking" sourceDetail="FAQ section" className="mt-3 inline-flex min-h-11 items-center justify-center gap-2 rounded-lg bg-aster-forest px-5 text-sm font-semibold text-white transition-colors hover:bg-aster-forest-deep">
-            <CalendarDays size={15} aria-hidden="true" /> Request a consultation <ArrowUpRight size={15} aria-hidden="true" />
-          </LeadActionButton>
+          <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+            <ChatActionButton className="inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-lg border border-aster-border bg-aster-white px-4 text-sm font-semibold text-aster-forest transition-colors hover:border-aster-forest hover:bg-aster-sage sm:w-auto">
+              Talk with Aster Assistant <ArrowUpRight size={16} aria-hidden="true" />
+            </ChatActionButton>
+            <LeadActionButton source="booking" sourceDetail="FAQ section" className="inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-lg bg-aster-forest px-4 text-sm font-semibold text-white transition-colors hover:bg-aster-forest-deep sm:w-auto">
+              <CalendarDays size={16} aria-hidden="true" /> Request a consultation <ArrowUpRight size={16} aria-hidden="true" />
+            </LeadActionButton>
+          </div>
         </div>
         <div className="divide-y divide-aster-border border-y border-aster-border">
           {questions.map(({ question, answer }) => (
