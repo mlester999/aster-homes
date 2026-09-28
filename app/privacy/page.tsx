@@ -1,8 +1,24 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { BrandMark } from "@/components/landing/brand-mark";
+import { canonicalSiteUrl } from "@/lib/config";
 
-export const metadata: Metadata = { title: "Privacy", description: "How Aster Homes handles property inquiries and personal information." };
+const siteUrl = canonicalSiteUrl();
+const description = "How Aster Homes handles property inquiries and personal information.";
+
+export const metadata: Metadata = {
+  title: "Privacy",
+  description,
+  alternates: { canonical: `${siteUrl}/privacy` },
+  openGraph: {
+    type: "website",
+    siteName: "Aster Homes",
+    title: "Privacy | Aster Homes",
+    description,
+    url: `${siteUrl}/privacy`,
+    images: ["/images/hero-exterior.webp"],
+  },
+};
 
 export default function PrivacyPage() {
   return (

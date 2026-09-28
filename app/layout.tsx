@@ -16,7 +16,6 @@ export const metadata: Metadata = {
   },
   description: "Explore home styles and get thoughtful guidance shaped around your budget, timeline, location, and needs.",
   applicationName: "Aster Homes",
-  alternates: { canonical: "/" },
   openGraph: {
     type: "website",
     siteName: "Aster Homes",

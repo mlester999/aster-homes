@@ -1,8 +1,24 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { BrandMark } from "@/components/landing/brand-mark";
+import { canonicalSiteUrl } from "@/lib/config";
 
-export const metadata: Metadata = { title: "Terms", description: "Terms for the Aster Homes home-search inquiry site." };
+const siteUrl = canonicalSiteUrl();
+const description = "Terms for the Aster Homes home-search inquiry site.";
+
+export const metadata: Metadata = {
+  title: "Terms",
+  description,
+  alternates: { canonical: `${siteUrl}/terms` },
+  openGraph: {
+    type: "website",
+    siteName: "Aster Homes",
+    title: "Terms | Aster Homes",
+    description,
+    url: `${siteUrl}/terms`,
+    images: ["/images/hero-exterior.webp"],
+  },
+};
 
 export default function TermsPage() {
   return (
