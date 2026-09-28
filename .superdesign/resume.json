@@ -1,0 +1,86 @@
+{
+  "schemaVersion": 1,
+  "targets": {
+    "/": {
+      "targetKind": "existing-ui",
+      "projectId": "6c7da0e0-8831-426d-9336-21ef37d78ef8",
+      "baselineDraftId": "3fd90177-1496-412c-8f94-389026abd33b",
+      "activeDraftId": "3fd90177-1496-412c-8f94-389026abd33b",
+      "designSystemPath": ".superdesign/design-system.md",
+      "referenceIds": [
+        "aster-homes-brand-mark"
+      ],
+      "brandAssets": {
+        "logo": {
+          "assetKey": "aster-homes-brand-mark",
+          "url": "https://vgbujcuwptvheqijyjbe.supabase.co/storage/v1/object/public/hmac-uploads/projects/6c7da0e0-8831-426d-9336-21ef37d78ef8/brand-assets/aster-homes-brand-mark/aster-logo-mark.png",
+          "sourcePath": "public/brand/aster-logo-mark.png"
+        }
+      },
+      "contextFiles": [
+        ".superdesign/design-system.md",
+        ".superdesign/tmp/aster-homes-conversion-funnel.html",
+        "app/page.tsx",
+        "app/layout.tsx",
+        "app/globals.css",
+        "components/landing/hero.tsx",
+        "components/landing/value-strip.tsx",
+        "components/landing/property-section.tsx",
+        "components/landing/how-it-works.tsx",
+        "components/landing/about-section.tsx",
+        "components/landing/consultation-section.tsx",
+        "components/landing/faq-section.tsx",
+        "components/landing/final-cta.tsx",
+        "components/landing/site-header.tsx",
+        "components/landing/site-footer.tsx",
+        "components/landing/brand-mark.tsx",
+        "components/landing/mobile-navigation.tsx",
+        "components/lead-action-button.tsx",
+        "components/lead-flow-provider.tsx",
+        "components/forms/lead-qualification-dialog.tsx",
+        "components/chat/chat-assistant.tsx",
+        "lib/properties/data.ts"
+      ],
+      "fingerprints": {
+        ".superdesign/design-system.md": "6f1eb5fff82fc87103e4c3c0891cb50716cf966ff45e3d4cc42971543178ec60",
+        ".superdesign/tmp/aster-homes-conversion-funnel.html": "6b15b2aaa8dd9058c77879452cd3387010a7a9570c7143772211b7c758e6591d",
+        "app/page.tsx": "878d64785c1cf7adcaadd7c28325bb1530030be0b9a1bfe59eb42dffc66f7fb3",
+        "app/layout.tsx": "6d2376a522e917be323a3c18d3d58269605ff9b556cddce7ceec12c1445330c5",
+        "app/globals.css": "9c62f786a3e732d4574734f3c5d7a1bae735adb6aa0b56b730af441a9e705246",
+        "components/landing/hero.tsx": "8f5cad09a7b7257de07c07ac7fbc71ee9fff7982be909ea7e56ada82fcd710d5",
+        "components/landing/value-strip.tsx": "3e6cba42ffce5bcd99138aa7c2188fd904a3e36fa3f93d5c01a6d51dbaf6f7c9",
+        "components/landing/property-section.tsx": "da0292fe3151c952d988ad429d631ae4e7dd1a0c74729ce7c3ed5668cf8c1fc3",
+        "components/landing/how-it-works.tsx": "495439a5374fe3e5dc1bc85ac8bf64bb665d17f3b8bc93891433fafddd9cf2dc",
+        "components/landing/about-section.tsx": "a9e462113fb3e6e86586f4efbc05327e815ba123967ec9b6c16c61e5e1145133",
+        "components/landing/consultation-section.tsx": "dae9b087ab1aa3dce2f29b9daa2bbbe91647b603057685cf82d4058b2580af9a",
+        "components/landing/faq-section.tsx": "89ab8bca6a1a2513d73ddf8fd16ce4ffaa6c37dd1b22cdc6a12a613ba2bc7184",
+        "components/landing/final-cta.tsx": "870e26c6e1424a9fe3ababfebf06d5ad35ac346326ab1547efe82b16508613c8",
+        "components/landing/site-header.tsx": "eea3bfec385d82b8d5ada0bdaef3369c7c1bbd9185c38dcaf9f0087b7d32e78c",
+        "components/landing/site-footer.tsx": "1c894cb78480b524ab987c5271b91eecd62ab497f000acf3647b6c7d362949b6",
+        "components/landing/brand-mark.tsx": "9adfbaf75b6cd92cb5995789e0ab8c8dc1cb07f52afa10b9574713b1c879f3b0",
+        "components/landing/mobile-navigation.tsx": "f730d5ca1edf01719389d63b242b2e1e59c549aaed5972f3ece23bdead3bb287",
+        "components/lead-action-button.tsx": "c1162a2ce91b89f87e148f8d119951ebaedd057f96e1a858829a65eadbab8469",
+        "components/lead-flow-provider.tsx": "9b9ec2566847e15dcb6c9df8c1eab1551980137ff97a7894386eedf91deafbb9",
+        "components/forms/lead-qualification-dialog.tsx": "a9c13e3a777feb40baf0716f4e6fe68c1b381775283952ca7b914cb21a3e2ece",
+        "components/chat/chat-assistant.tsx": "18fd6681c6759116229e66459f9f76d09fd206bda8e50f3729813ce1cb9aaa6e",
+        "lib/properties/data.ts": "49aa1c20576326999491518f4a7038157cdaaed8850442883a3809c10a7d4ec7"
+      },
+      "components": [
+        {
+          "name": "BrandMark",
+          "sourcePath": "components/landing/brand-mark.tsx",
+          "logoAssetKey": "aster-homes-brand-mark"
+        }
+      ],
+      "drafts": {
+        "3fd90177-1496-412c-8f94-389026abd33b": {
+          "title": "Aster Homes Conversion Funnel Refresh",
+          "visualDirection": "Warm editorial home-search funnel, evergreen and cream palette, transparent Aster Homes mark, no public sample listings, and clear lead or consultation CTAs throughout.",
+          "currentVersion": 5
+        }
+      },
+      "updatedAt": "2026-09-28T04:11:48.8903926Z"
+    }
+  },
+  "updatedAt": "2026-09-28T04:11:48.8903926Z"
+}

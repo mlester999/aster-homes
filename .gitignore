@@ -1,0 +1,11 @@
+node_modules/
+.next/
+out/
+coverage/
+.demo-data/
+.env
+.env.local
+.env.*.local
+!.env.example
+.superdesign/tmp/
+.DS_Store
