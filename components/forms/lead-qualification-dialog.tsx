@@ -290,7 +290,7 @@ export function LeadQualificationDialog({ open, request, bookingUrl, onClose }: 
               {step < stepNames.length - 1 ? (
                 <button type="button" onClick={nextStep} className="inline-flex min-h-11 items-center gap-2 rounded-lg bg-aster-forest px-5 text-sm font-semibold text-white hover:bg-aster-forest-deep">Continue <ArrowRight size={16} aria-hidden="true" /></button>
               ) : (
-                <button type="submit" disabled={submitting} onClick={(event) => { if (draft.preferred_location.trim().length < 2) { event.preventDefault(); setError("Share a preferred location, or enter ‘Open to options.’"); } }} className="inline-flex min-h-11 items-center justify-center gap-2 rounded-lg bg-aster-forest px-5 text-sm font-semibold text-white hover:bg-aster-forest-deep disabled:cursor-wait disabled:opacity-60">{submitting ? "Sending request…" : "Send my request"}{!submitting && <ArrowRight size={16} aria-hidden="true" />}</button>
+                <button type="submit" disabled={submitting} onClick={(event) => { if (draft.preferred_location.trim().length < 2) { event.preventDefault(); setError("Share a preferred location, or enter ‘Open to options.’"); } }} className="inline-flex min-h-11 items-center justify-center gap-2 rounded-lg bg-aster-forest px-5 text-sm font-semibold text-white hover:bg-aster-forest-deep disabled:opacity-60">{submitting ? "Sending request…" : "Send my request"}{!submitting && <ArrowRight size={16} aria-hidden="true" />}</button>
               )}
             </div>
           </form>
